@@ -4,6 +4,7 @@ import { AuthProvider } from "./AuthProvider";
 import { AuthGuard, NoAuthGuard } from "./RouteGuards";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import About from "./pages/About";
 
 const App = () => {
   const auth = false; // Set your authentication status here
@@ -28,6 +29,7 @@ const App = () => {
               </NoAuthGuard>
             }
           />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>
